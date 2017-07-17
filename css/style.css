@@ -1,0 +1,247 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+.title{
+  background-color: #2D3944;
+  color: white;
+  padding: 30px 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+.info{
+  padding: 20px 0;
+  border-bottom: solid 4px black;
+}
+.personal{
+  margin: 25px 0 50px;
+}
+.personal label{
+  color: #95A1AC;
+  display: block;
+  font-size: 1.2rem;
+  padding: 12px 0;
+}
+.wrapper{
+  width: 95%;
+  margin: 0 auto;
+}
+.info p,
+.wrapper h2,
+.copy{
+  text-align: center;
+}
+select{
+  border-radius: 15px;
+  color:#999;
+  padding: 20px;
+  -webkit-appearance: none; 
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  background-position-x: calc(100% - 4%);
+}
+#zip{
+  width:50%;
+}
+.wrapper h2,
+legend{
+  color: #2D3944;
+  font-weight: bold; 
+  font-size: 1.5rem;
+}
+p{
+  color: #C9CDCF;
+  font-size: 1.3rem;
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select{
+  background-color: #EFF0F1;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='telephone']:focus,
+select:focus,
+textarea:focus{
+  border-radius: 10px;
+  border: solid 2px #46698B;
+  outline: none;
+}
+button{
+  outline: none;
+}
+textarea{
+  resize: none;
+  background-color: #EFF0F1;
+  width: 100%;
+  height: 150px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.top-border{
+  margin-top: 4px;
+  border-top: solid 2px black;
+  color: #2D3944;
+  padding-top: 25px;
+}
+input[placeholder='Required']{
+  padding-right: 30px;
+  padding-left: 10px;
+}
+::-webkit-input-placeholder { text-align:right; }
+input:-moz-placeholder { text-align:right; }
+
+fieldset{
+  border: none;
+  padding: 0;
+}
+button[type='submit']{
+  background-color: #4EBAB5;
+  color: white;
+  width: 100%;
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+.newsletter,
+.newsletter p{
+  color:#818D9A;
+  font-size: 1.3rem;
+}
+
+.input-bg{
+  display: block;
+  position: relative;
+  margin: 15px 0 15px -15px;
+}
+.chk-bg label{
+  position: absolute;
+  top:0;
+  width: 25px;
+  height: 25px;
+  text-align: right;
+  border-radius: 5px;
+  background-color: #EFF0F1;
+}
+.radio-bg label{
+  position: absolute;
+  top:0;
+  width:25px;
+  height: 25px;
+  text-align: right;
+  border-radius: 50%;
+  background-color: #EFF0F1;
+}
+button{
+  margin: 25px 0;
+}
+
+/* Radio/checkbox */
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 25px;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+input[type=radio] label{
+  display: block;
+}
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  position     : relative;
+  margin-bottom: 15px;
+  margin-left  : -25px;
+  line-height  : 1.5em;
+}
+input[type=checkbox]:not(old) + label > span{
+  display          : inline-block;
+  width            : 25px;
+  height           : 25px;
+  border           : none;
+  border-radius    : 4px;
+  background-color : #EFF0F1; 
+  vertical-align   : middle;
+  margin-right     : 25px;
+}
+input[type=checkbox]:not(old):focus + label > span{
+  border: solid 2px #2D3944;
+}
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : "\2713 ";
+  display     : inline-block;
+  position    : absolute;
+  top         : 3px;
+  left        : 3px;
+  width       : 100%;
+  color       : #2D3944;
+  font-size   : 1em;
+  font-weight : bold;
+}
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 25px;
+  height           : 25px;
+  border           : none;
+  border-radius    : 50%;
+  background-color : #EFF0F1; 
+  vertical-align   : middle;
+  margin-right     : 25px;
+}
+input[type=radio]:not(old):focus + label > span{
+  display          : inline-block;
+  width            : 25px;
+  height           : 25px;
+  border-radius    : 50%;
+  border: #2D3944 solid 2px;
+}
+input[type=radio]:not(old):checked:not(:focus) + label > span > span{
+  display          : block;
+  width            : 11px;
+  height           : 11px;
+  margin           : 7px 7px;
+  border-radius    : 50%;
+  background       : #2D3944;
+}
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 11px;
+  height           : 11px;
+  margin           : 5px 5px;
+  border-radius    : 50%;
+  background       : #2D3944;
+}
+
+@media (min-width: 760px){
+  .wrapper{
+    width: 60%;
+    margin:0 auto;
+  }
+  .personal label{
+    display: inline-block;
+    width: 150px;
+  }
+  .personal input,
+  .personal select{
+    display: inline-block;
+    width: calc(99% - 150px);
+  }
+  input,
+  select{
+    margin: 15px 0;
+  }
+  #zip{
+    width: 170px;
+  }
+}
